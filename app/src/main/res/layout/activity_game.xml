@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black"
+    tools:context="com.csekuet14.rksazid.testyourmemory.GameActivity">
+
+    <Button
+        android:background="@drawable/b1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/b1"
+        android:layout_above="@+id/textView"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:background="@drawable/b2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/b2" />
+
+    <Button
+        android:background="@drawable/b4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/b4"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/b1"
+        android:layout_alignStart="@+id/b1" />
+
+    <Button
+        android:background="@drawable/b3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/b2"
+        android:layout_alignStart="@+id/b2"
+        android:id="@+id/b3" />
+
+    <TextView
+        android:text="Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/no_of_turn_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView5"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="normal|bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Play again?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_again_textView"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/listen_yourTurn_textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:background="@drawable/ok"
+        android:id="@+id/play_again_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/no_of_turn_textView"
+        android:textStyle="normal|bold"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/b2"
+        android:layout_toLeftOf="@+id/b3"
+        android:layout_toStartOf="@+id/b3" />
+
+    <TextView
+        android:text="Listen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/listen_yourTurn_textView"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@+id/b4"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
